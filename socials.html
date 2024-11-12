@@ -62,6 +62,10 @@
       color: #26a7de;
     }
 
+    .medium:hover {
+      color: #00ab6c;
+    }
+
     .reddit:hover {
       color: #ff4500;
     }
@@ -133,6 +137,13 @@
       </div>
       <!-- End twitter Icon -->
 
+      <!-- Start Medium Icon -->
+      <div id="medium" onclick="navigate(this.id)" class="social">
+        <span class="icon medium"><i class="fab fa-medium"></i></span>
+      </div>
+      <!-- End Medium Icon -->
+
+      
 <!--       Start reddit Icon -->
 <!--       <div id="reddit" onclick="navigate(this.id)" class="social">
         <span class="icon reddit"><i class="fab fa-reddit"></i></span>
@@ -193,6 +204,9 @@
         }
         else if (id === "twitter") {
           window.open("https://twitter.com/DarshanaV5", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "medium") {
+          window.open("https://medium.com/@darshanav", '_blank').focus(); // Replace with your Medium profile URL
         }
         else if (id === "reddit") {
           window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
