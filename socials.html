@@ -86,6 +86,10 @@
       color: #2AABEE;
     }
 
+    .buymeacoffee:hover {
+      color: #FFDD00;
+    }
+
     .social {
       position: relative;
       margin: 10px;
@@ -143,6 +147,11 @@
       </div>
       <!-- End Medium Icon -->
 
+      <!-- Start BuyMeACoffee Icon -->
+      <div id="buymeacoffee" onclick="navigate(this.id)" class="social">
+        <span class="icon buymeacoffee"><i class="fas fa-mug-hot"></i></span>
+      </div>
+      <!-- End BuyMeACoffee Icon -->
       
 <!--       Start reddit Icon -->
 <!--       <div id="reddit" onclick="navigate(this.id)" class="social">
@@ -222,6 +231,9 @@
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+        }
+        else if (id === "buymeacoffee") {
+          window.open("https://www.buymeacoffee.com/darshanav", '_blank').focus();
         }
       }
 
